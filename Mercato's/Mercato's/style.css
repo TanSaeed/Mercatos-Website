@@ -1,0 +1,187 @@
+/*======================== General CSS ==========================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*======================== General CSS ==========================*/
+
+/*========================== Nav CSS ============================*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: #1E1E1E;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+a:active,a:hover {
+    
+    border-bottom: solid 1.4px white;
+    transition: 0.28s;
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+@media (min-width: 300px) and (max-width: 767.98px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        z-index: 9999;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: #1E1E1E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+}
+/*========================== Nav CSS ============================*/
+
+/*========================== Slider CSS ============================*/
+
+slider {
+    display: block;
+    width: 100%;
+    height: 92%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: absolute;
+}
+
+slider > * {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+
+slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url('pizza1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(pizza2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(3) {
+    left: 0%;
+    animation-delay: 5s;
+    background-image: url(pizza3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+slide:nth-child(4) {
+    left: 0%;
+    animation-delay: 8s;
+    background-image: url(pizza4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+slide p {
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 340px;
+    color: white;
+}
+
+@keyframes slide {
+    0% { left: 100%; width: 100%; }
+    5% { left: 0%; }
+    25% { left: 0%; }
+    30% { left: -100%; width: 100%; }
+    30.0001% { left: -100%; width: 0%; }
+    100% { left: 100%; width: 0%; }
+}
+
+
+/*========================== Slider CSS ============================*/
