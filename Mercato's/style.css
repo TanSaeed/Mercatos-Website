@@ -139,27 +139,27 @@ slider > * {
 slide:nth-child(1) {
     left: 0%;
     animation-delay: -1s;
-    background-image: url('pizza1.jpg');
+    background-image: url("img/landing1.jpg");
     background-size: cover;
     background-position: center;
 }
 slide:nth-child(2) {
     animation-delay: 2s;
-    background-image: url(pizza2.jpg);
+    background-image: url("img/landing2.jpg");
     background-size: cover;
     background-position: center;
 }
 slide:nth-child(3) {
     left: 0%;
     animation-delay: 5s;
-    background-image: url(pizza3.jpg);
+    background-image: url("img/landing3.jpg");
     background-size: cover;
     background-position: center;
 }
 slide:nth-child(4) {
     left: 0%;
     animation-delay: 8s;
-    background-image: url(pizza4.jpg);
+    background-image: url("img/landing4.jpg");
     background-size: cover;
     background-position: center;
 }
