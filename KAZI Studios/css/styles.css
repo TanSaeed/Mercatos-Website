@@ -1,0 +1,528 @@
+/*-- ======================== Start: Font Imported CSS ==================== --*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+/*-- ======================== End: Font Imported CSS ==================== --*/
+
+/*-- ======================== Start: General CSS ==================== --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #606060;
+}
+i {
+    color: #0275d8;
+}
+/*-- ======================== End: General CSS ==================== --*/
+
+/*-- ======================== Start: Landing Page + NavBar CSS ==================== --*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(13,11,10, 0.7), rgba(13,11,10, 0.5)), url(/img/photo-of-men-doing-fist-bump-3184302.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* clip-path: polygon(0 25%, 0 0, 35% 0%, 65% 0%, 100% 0, 100% 25%, 90% 50%, 100% 100%, 65% 100%, 35% 100%, 0 100%, 10% 50%); */
+    position: relative;
+}
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.90;
+    z-index: -1;
+    background: linear-gradient(to right, #0D0B0A 0%, #0D0B0A 0%, #0D0B0A 100%);
+}
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: .6;
+    z-index: -1;
+    background: linear-gradient(to right, #0D0B0A 0%, #0D0B0A 0%, #0D0B0A 100%);
+}
+.nav-item a {
+    color: #999997!important;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.3rem;
+}
+.nav-item a:hover {
+    color: #F3F1EB!important;
+}
+.navbar-brand {
+    color: #999997!important;
+    font-weight: bold;
+    font-size: 2.4rem!important;
+    font-family: 'Teko', sans-serif;
+}
+.navbar-brand:hover {
+    color: #F3F1EB!important;
+}
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: #F3F1EB;
+    text-align: center;
+    position: relative;
+}
+.header-section h1 {
+    font-size: 2.2rem;
+    color: #F3F1EB;
+}
+.header-section .center-div  p {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.6rem;
+    color: #F3F1EB;
+}
+.center-div {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.header-buttons a {
+    border: 1.5px solid #F3F1EB;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 6px 30px;
+    outline: none;
+    color: #F3F1EB;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+}
+.header-buttons a:hover {
+    color: #F3F1EB;
+    background-color: #999997;
+    text-decoration: none;
+    box-shadow: 0 0 20p 0 rgba(0,0,0,0.3);
+}
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #E2E1DF;
+}
+.navbar-toggler i {
+    color: #999997!important;
+}
+/*-- ======================== End: Landing Page + NavBar CSS ==================== --*/
+
+/*-- ======================== Start: business PR Campaigns CSS ==================== --*/
+.header-extra-div {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div {
+    background: #fff;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div h2 {
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+.extra-div:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+.campaigns-buttons a {
+    border: 1.5px solid #0275d8;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 3px 32px;
+    outline: none;
+    color: #0275d8;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+}
+.campaigns-buttons a:hover {
+    color: #fff;
+    background-color: #0275d8;
+    text-decoration: none;
+    box-shadow: 0 0 20p 0 rgba(0,0,0,0.3);
+}
+.campaigns-1p {
+    color: #333;
+    line-height: 1.42857143;
+    font-size: 14px;
+    line-height: 1.8857143;
+}
+.campaigns-p2 {
+    color: #7f8588;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.campaigns-h4 {
+    color: #585858;
+    font-size: 25px;
+    font-weight: 200;
+}
+/*-- ======================== End: BusinessPR Campaigns CSS ==================== --*/
+
+/*-- ======================== Start: Promotion Services Section CSS ==================== --*/
+.serviceoffers {
+    background: #f7f7f9;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.headings h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.names h1 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.service-div h2 {
+    font-size: 0.9rem;
+    margin: 26px 0 15px 0;
+    font-weight: bold;
+    line-height: 0.4;
+    word-spacing: 4px;
+}
+.service-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress {
+    height: 0.8rem!important;
+    margin-bottom: 25px!important;
+    background: #606060;
+}
+.services-buttons a {
+    border: 1.5px solid #0275d8;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 3.3px 35px;
+    outline: none;
+    color: #0275d8;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Teko', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-buttons a:hover {
+    color: #fff;
+    background-color: #0275d8;
+    text-decoration: none;
+    box-shadow: 0 0 20p 0 rgba(0,0,0,0.3);
+}
+.services-p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+/*-- ======================== End: Promotion Services Section CSS ==================== --*/
+
+/*-- ======================== Start: Projects Done Section CSS ==================== --*/
+.projects-done {
+    margin: 70px 0;
+}
+.projects-done h1 {
+    font-weight: 300!important;
+    margin: 15px 0 20px;
+    letter-spacing: 2.4px;
+    line-height: 1;
+    font-size: 40px;
+}
+.projects-done h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: .8;
+    letter-spacing: 1.6px;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*-- ======================== End: Projects Done Section CSS ==================== --*/
+
+/*-- ======================== Start: Mgnt Price Section CSS ==================== --*/
+.mgnt-price {
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+.card {
+    transition: 0.4s ease;
+}
+.card-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff!important;
+    padding: 25px 9!important;
+}
+.card-body {
+    padding: 30px 0px!important;
+}
+.card-body li {
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer {
+    background: white!important;
+    padding: 30px 0px!important;
+}
+.card-footer a {
+    border: 1px solid #0275d8;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #0275d8;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align:center;
+}
+.card:hover .card-footer a{
+    color: #fff;
+    background: #0275d8;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.card-body i {
+    color: #606060;
+}
+.card:hover .card-header, .card:hover .money, .card:hover .card-body i {
+    color: #0275d8;
+}
+/*-- ======================== End: Mgnt Price Section CSS ==================== --*/
+
+/*-- ======================== Start: Reviews Section CSS ==================== --*/
+.review-section {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+.box {
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+.box:hover {
+    background-color: #16c9f6;
+}
+.box:hover p {
+    color: white;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+.carousel-indicators li {
+    background-color: #16c9f6!important;
+}
+.box a {
+    position: relative;
+}
+.box a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.box a:after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h1 {
+    font-size: 13px;
+    font-size: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+.box h2 {
+    font-size: 13px;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+/*-- ======================== End: Mgnt Reviews Section CSS ==================== --*/
+
+/*-- ======================== Start: Contact Section CSS ==================== --*/
+.contact-us {
+    width: 100%;
+    height: 83vh;
+    padding: 80px 0;
+    position: relative;
+    background: #f7f7f9;
+}
+.form-button button {
+    border: 1px solid #0275d8;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.form-button button:hover {
+    background: #fff;
+    color: #0275d8;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+::placeholder {
+    font-size: 0.85rem;
+}
+/*-- ======================== End: Contact Section CSS ==================== --*/
+
+/*-- ======================== Start: Subscribe Section CSS ==================== --*/
+.subscribe {
+    width: 100%;
+    height: auto;
+    margin: 80px 0;
+}
+.subscribe h4 {
+    color: #585858;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+.subscribe-input {
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-width: 45px;
+}
+.input-group-text {
+    color: #fff!important;
+    background: #0275d8!important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 130px;
+    min-height: 40px;
+}
+/*-- ======================== End: Subscribe Section CSS ==================== --*/
+
+/*-- ======================== Start: Footer Section CSS ==================== --*/
+.footer-section {
+    width: 100%;
+    height: auto;
+    padding: 35px 0 35px 0;
+    background: #0275d8;
+    position: relative;
+}
+
+.footer-section p {
+    color: #DFE9F8;
+    font-size: 0.9rem;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+
+.footer-section li a {
+    font-size: 0.8rem;
+    line-height: 0.03;
+    font-weight: 400;
+    color: #E8EEFD;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.footer-section h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    background: #0275d8;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#myBtn:hover {
+    background: transparent;
+    color: #0275d8;
+}
+/*-- ======================== End: Footer Section CSS ==================== --*/
+
+/*-- ======================== Start: Media Query CSS ==================== --*/
+/*-- ======================== End: Media Query CSS ==================== --*/
